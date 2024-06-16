@@ -4,6 +4,7 @@ import {Button, Col, Container, Row} from 'react-bootstrap';
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import ProfileImage from '../../assets/images/Abdullah.jpg';
 import Connect from '../Connect';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [text] = useTypewriter({
@@ -29,14 +30,18 @@ const Home = () => {
                         <p className='fs-5 mb-3'>based in Lahore, Pakistan.</p>
                         <div className='d-flex gap-3 align-items-center mb-4'>
                             <div>
-                                <Button href='/projects' className='custom-btn border-0 rounded'>
-                                    View My Works
-                                </Button>
+                                <Link to="/projects">
+                                    <Button className='custom-btn border-0 rounded'>
+                                        View My Works
+                                    </Button>
+                                </Link>
                             </div>
                             <div>
-                                <Button href='/resume' className='custom-btn2 border-0'>
-                                    View My Resume <FaRegArrowAltCircleRight />
-                                </Button>
+                                <Link to="/resume" >
+                                    <Button className='custom-btn2 border-0'>
+                                        View My Resume <FaRegArrowAltCircleRight />
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                         <p>

@@ -3,6 +3,7 @@ import { Container, Row, Button, Col } from 'react-bootstrap';
 import { Worker } from '@react-pdf-viewer/core';
 import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
+import { Link } from 'react-router-dom';
 
 const Resume = () => {
     const downloadCv = () => {
@@ -21,9 +22,11 @@ const Resume = () => {
                                 <Button className='custom-btn border-0 rounded' onClick={downloadCv}>Download CV</Button>
                             </div>
                             <div>
-                                <Button href='/projects' className='custom-btn border-0 rounded'>
-                                    View My Works
-                                </Button>
+                                <Link to="/projects">
+                                    <Button className='custom-btn border-0 rounded'>
+                                        View My Works
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </Col>
