@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { DiHtml5, DiCss3Full, DiJavascript1, DiReact, DiNodejs, DiMongodb, DiGit, DiGithubFull, DiPhp, DiSass, DiMysql, DiWordpress, DiBootstrap, DiMaterializecss } from "react-icons/di";
+import { DiHtml5, DiCss3Full, DiJavascript1, DiReact, DiNodejs, DiMongodb, DiGit, DiGithubFull, DiPhp, DiMysql, DiWordpress, DiBootstrap } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
 
 

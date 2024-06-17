@@ -13,10 +13,10 @@ const Home = () => {
     });
 
     return (
-        <section className='py-5'>
+        <section className='py-3 py-md-5'>
             <Container>
-                <Row className='py-2 align-items-center'>
-                    <Col>
+                <Row className='py-2 align-items-center row-gap-4 row-gap-lg-0'>
+                    <Col className='text-center text-lg-start'>
                         <h2 className='mb-3'>
                             Hi There!
                             <span className="wave" role="img" aria-labelledby="wave">
@@ -27,8 +27,8 @@ const Home = () => {
                             I'm <span className='colored-heading fw-bolder'>{text}</span>
                             <Cursor />
                         </h1>
-                        <p className='fs-5 mb-3'>based in Lahore, Pakistan.</p>
-                        <div className='d-flex gap-3 align-items-center mb-4'>
+                        <p className='mb-3'>based in Lahore, Pakistan.</p>
+                        <div className='d-flex gap-3 align-items-center mb-4 justify-content-center justify-content-lg-start'>
                             <div>
                                 <Link to="/projects">
                                     <Button className='custom-btn border-0 rounded'>
@@ -47,11 +47,11 @@ const Home = () => {
                         <p>
                             Feel free to <span className="text-pink">connect </span>with me
                         </p>
-                        <Connect/>
+                        <Connect alignCenter={true} alignStartLg={true}/>
                     </Col>
-                    <Col className='d-flex justify-content-end'>
+                    <Col className='d-flex justify-content-center justify-content-lg-end order-first order-lg-last'>
                         <div className='bg-light rounded-circle p-3'>
-                            <img src={ProfileImage} alt="Abdullah Irfan" className='img-fluid rounded-circle object-fit-cover' style={{ width: '400px', height: '400px' }} />
+                            <img src={ProfileImage} alt="Abdullah Irfan" className='rounded-circle object-fit-cover profileImg' />
                         </div>
                     </Col>
                 </Row>

@@ -8,3 +8,31 @@ body{
   color: white !important;
   height: 100%;
 }
+
+p {
+  font-size: 14px; /* Default font size for mobile devices */
+}
+
+@media (min-width: 576px) {
+  p {
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+      font-size: 20px;
+  }
+}

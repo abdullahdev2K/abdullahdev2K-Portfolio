@@ -12,10 +12,10 @@ const Resume = () => {
     };
 
     return (
-        <section className='py-5'>
+        <section className='py-3 py-md-5'>
             <Container>
                 <Row className='justify-content-center'>
-                    <Col>
+                    <Col md={6}>
                         <h1>Download CV or View My Works</h1>
                         <div className='d-flex gap-3 align-items-center my-4'>
                             <div>

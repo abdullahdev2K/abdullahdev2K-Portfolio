@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 // import ProjectCards from './Project_Card';
 
 const Projects = () => {
     return (
-        <section className='py-5'>
+        <section className='py-3 py-md-5'>
             <Container>
                 <h1 className='mb-3'>Projects</h1>
                 <p>
@@ -18,6 +19,11 @@ const Projects = () => {
                 <p>
                     Thank you for visiting, and I look forward to sharing my future projects with you.
                 </p>
+                <Link to="/">
+                    <Button className='custom-btn border-0 rounded'>
+                        Back to Home
+                    </Button>
+                </Link>
                 {/* <Row className='row-gap-4'>
                     <ProjectCards title={"Hello This is A React Project"} description={"World"} type={"React"} githubLink={"https://www.linkedin.com/in/devabdullah2k/"} />
                     <ProjectCards title={"Pharmacy Management System"} description={"World"} type={"MERN"} githubLink={"https://www.linkedin.com/in/devabdullah2k/"} />

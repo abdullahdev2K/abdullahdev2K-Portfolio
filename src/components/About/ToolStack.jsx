@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { SiWindows11, SiVisualstudiocode, SiPostman, SiSlack, SiClickup, SiZoom, SiFilezilla, SiWindowsterminal } from "react-icons/si";
+import { SiWindows11, SiVisualstudiocode, SiPostman, SiSlack, SiClickup, SiZoom } from "react-icons/si";
 
 const ToolStack = () => {
     return (
